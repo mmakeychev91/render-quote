@@ -113,6 +113,7 @@ h1 {
 .show-new-quote-btn {
   text-transform: uppercase;
   padding: 12px;
+  margin-bottom: 64px;
 }
 @media (max-width: 767px) {
   .show-new-quote-btn {
