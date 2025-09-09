@@ -85,6 +85,20 @@ a:hover {
   opacity: 0.7;
 }
 
+/* Стили для библейских ссылок */
+.bible-link {
+  color: var(--text-color-active);
+  text-decoration: underline;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.bible-link:hover {
+  color: var(--text-color-good);
+  text-decoration: none;
+  opacity: 1;
+}
+
 button {
   cursor: pointer;
 }
