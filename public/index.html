@@ -13,19 +13,44 @@
 
 <body>
 
-  <header style="display: flex;flex-direction: column;gap: 8px;margin-bottom: 24px;" class="header">
-    <h1 style="background-color: black; padding: 8px; margin-top: 0;margin-bottom: 0; " class="">Заповеди Господа Иисуса Христа</h1>
-    <p style="background-color: black; padding: 8px; margin-top: 0;margin-bottom: 0;">Перейдите по ссылке в конце заповеди, чтобы прочитать толкование.</p>
+  <header class="header">
+    <div class="header-content">
+      <h1 class="header-title">Заповеди Господа Иисуса Христа</h1>
+      <button id="info-button" class="info-button" aria-label="Информация о сайте" title="Как работает сайт">
+        <span class="info-icon">?</span>
+      </button>
+    </div>
   </header>
 
   <main class="main">
     <div class="container">
       <div class="text-container">
-        <p class="quote" style="background-color: black;padding: 8px;" id="text-container">Покайтесь, ибо приблизилось Царство Небесное <a target="_blank" class="bible-link" href="https://bible.optina.ru/new:mf:04:17">(Мф. 4:17)</a></p>
+        <p class="quote" id="text-container">Покайтесь, ибо приблизилось Царство Небесное <a target="_blank" class="bible-link" href="https://bible.optina.ru/new:mf:04:17">(Мф. 4:17)</a></p>
       </div>
-      <button style="background-color: white; color: black; border: none; font-size: 16px;line-height: 1.4;" id="render-button" class="show-new-quote-btn">другая заповедь</button>
+      <button id="render-button" class="show-new-quote-btn">другая заповедь</button>
     </div>
   </main>
+
+  <footer class="footer">
+    <a href="https://pay.cloudtips.ru/p/d348c015" target="_blank" class="support-link">Поддержать проект</a>
+  </footer>
+
+  <!-- Попап с пояснением -->
+  <div id="info-popup" class="popup-overlay">
+    <div class="popup-content">
+      <button class="popup-close" aria-label="Закрыть">&times;</button>
+      <h2 class="popup-title">О проекте</h2>
+      <div class="popup-text">
+        <p>✓ Я просмотрю всю прямую речь Господа Иисуса Христа из четырех Евангелий (на данный момент просмотрено глав: Мф. - 19, Мк. - 0, Лк. - 0, Ин.- 0)</p>
+        <p>✓ Среди просмотренной прямой речи я выделил заповеди</p>
+        <p>✓ Разделил эти заповеди на разные блоки (1 заповедь - 1 блок)</p>
+        <p class="popup-divider"></p>
+        <p>На сайте случайным образом отображается 1 заповедь. При клике на кнопку "Другая заповедь" соответственно отображается другая.</p>
+        <p class="popup-divider"></p>
+        <p>К каждой заповеди прикреплена ссылка на толкование православных святых отцов. Она расположена в конце заповеди.</p>
+      </div>
+    </div>
+  </div>
 
   <script src="./bundle.js"></script>
 </body>
